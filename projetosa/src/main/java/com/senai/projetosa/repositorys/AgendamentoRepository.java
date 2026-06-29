@@ -1,0 +1,9 @@
+package com.senai.projetosa.repositorys;
+
+import com.senai.projetosa.models.AgendamentoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AgendamentoRepository extends JpaRepository <AgendamentoModel, Long> {
+}
