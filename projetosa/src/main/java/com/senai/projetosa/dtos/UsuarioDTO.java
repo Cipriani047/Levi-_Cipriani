@@ -1,0 +1,67 @@
+package com.senai.projetosa.dtos;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
+
+public class UsuarioDTO {
+
+    private Long id;
+    private String nome;
+    private String email;
+    private String senha;
+    private int matricula;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate dataNascimento;
+
+    public UsuarioDTO() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+}
